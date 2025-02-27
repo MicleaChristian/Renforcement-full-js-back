@@ -21,29 +21,36 @@ Cela installera les dépendances et lancera directement le serveur
 	•	Méthode : POST
 	•	URL : /register
 	•	Body (JSON) : { "username": "...", "password": "..." }
+
 	2.	Connexion
 	•	Méthode : POST
 	•	URL : /login
 	•	Body (JSON) : { "username": "...", "password": "..." }
+
 	3.	Déconnexion
 	•	Méthode : POST
 	•	URL : /logout
+
 	4.	Récupérer les tâches
 	•	Méthode : GET
 	•	URL : /tasks
 	•	Description : Retourne la liste des tâches de l’utilisateur connecté.
-	5.	Créer une tâche
+
+	4.	Créer une tâche
 	•	Méthode : POST
 	•	URL : /tasks
 	•	Body (JSON) :{"title": "Titre de la tâche", "description": "Description", "deadline": "2025-12-31"}
-	6.	Modifier une tâche
+
+	5.	Modifier une tâche
 	•	Méthode : PUT
 	•	URL : /tasks/:id
 	•	Body (JSON) :{ "title": "Nouveau titre", "description": "Nouvelle description", "deadline": "2025-12-31"}
-	7.	Marquer une tâche comme terminée
+
+	6.	Marquer une tâche comme terminée
 	•	Méthode : PATCH
 	•	URL : /tasks/:id/complete
-	8.	Supprimer une tâche
+
+	7.	Supprimer une tâche
 	•	Méthode : DELETE
 	•	URL : /tasks/:id
 
